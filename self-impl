@@ -1,0 +1,46 @@
+(env_lastest) exx@optml-1:~/andrej/nanoGPT$ python3 train.py --compile=False --max_iters=2
+Overriding: compile = False
+Overriding: max_iters = 2
+config: #####################################################################
+{'out_dir': 'out', 'eval_interval': 100, 'log_interval': 1, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': True, 'init_from': 'scratch', 'wandb_log': False, 'wandb_project': 'owt', 'wandb_run_name': 'gpt2', 'dataset': 'openwebtext', 'gradient_accumulation_steps': 1, 'batch_size': 12, 'block_size': 30, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.0006, 'max_iters': 2, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 2000, 'lr_decay_iters': 600000, 'min_lr': 6e-05, 'backend': 'nccl', 'device': 'cpu', 'dtype': 'float32', 'compile': False}
+#####################################################################
+tokens per iteration will be: 360
+Initializing a new model from scratch
+defaulting to vocab_size of GPT-2 to 50304 (50257 rounded up for efficiency)
+number of parameters: 123.59M
+configure_optimizers: successful assert
+num decayed parameter tensors: 50, with 123,591,168 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: False
+time 2025-02-05 21:46:13.525447, iter 0, loss 10.9423, time 901.10ms, mfu -100.00%
+time 2025-02-05 21:46:14.269947, iter 1, loss 10.9405, time 744.50ms, mfu -100.00%
+time 2025-02-05 21:46:14.906906, iter 2, loss 10.8112, time 636.96ms, mfu -100.00%
+
+
+##############################################################################################################################
+
+(env_lastest) exx@optml-1:~/andrej/nanoGPT$ python3 train.py --compile=False --max_iters=10
+Overriding: compile = False
+Overriding: max_iters = 10
+config: #####################################################################
+{'out_dir': 'out', 'eval_interval': 100, 'log_interval': 1, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': True, 'init_from': 'scratch', 'wandb_log': False, 'wandb_project': 'owt', 'wandb_run_name': 'gpt2', 'dataset': 'openwebtext', 'gradient_accumulation_steps': 1, 'batch_size': 12, 'block_size': 30, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.0006, 'max_iters': 10, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 2000, 'lr_decay_iters': 600000, 'min_lr': 6e-05, 'backend': 'nccl', 'device': 'cpu', 'dtype': 'float32', 'compile': False}
+#####################################################################
+tokens per iteration will be: 360
+Initializing a new model from scratch
+defaulting to vocab_size of GPT-2 to 50304 (50257 rounded up for efficiency)
+number of parameters: 123.59M
+configure_optimizers: successful assert
+num decayed parameter tensors: 50, with 123,591,168 parameters
+num non-decayed parameter tensors: 25, with 19,200 parameters
+using fused AdamW: False
+time 2025-02-05 22:14:02.172927, iter 0, loss 10.9423, time 840.48ms, mfu -100.00%
+time 2025-02-05 22:14:02.919125, iter 1, loss 10.9405, time 746.20ms, mfu -100.00%
+time 2025-02-05 22:14:03.576334, iter 2, loss 10.8112, time 657.21ms, mfu -100.00%
+time 2025-02-05 22:14:04.217295, iter 3, loss 10.7733, time 640.96ms, mfu -100.00%
+time 2025-02-05 22:14:04.857462, iter 4, loss 10.8365, time 640.17ms, mfu -100.00%
+time 2025-02-05 22:14:05.479904, iter 5, loss 10.8532, time 622.02ms, mfu 0.14%
+time 2025-02-05 22:14:06.098651, iter 6, loss 10.7112, time 618.73ms, mfu 0.14%
+time 2025-02-05 22:14:06.766958, iter 7, loss 10.5765, time 668.33ms, mfu 0.14%
+time 2025-02-05 22:14:07.357713, iter 8, loss 10.5209, time 590.77ms, mfu 0.14%
+time 2025-02-05 22:14:07.949011, iter 9, loss 10.5448, time 591.31ms, mfu 0.14%
+time 2025-02-05 22:14:08.543281, iter 10, loss 10.4671, time 594.26ms, mfu 0.14%
