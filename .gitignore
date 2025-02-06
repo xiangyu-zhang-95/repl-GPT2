@@ -15,3 +15,5 @@ successful_run
 train_log.txt
 wandb/
 *.ipynb
+orig_impl
+self_impl
